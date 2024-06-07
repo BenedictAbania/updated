@@ -1,0 +1,141 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ebba28;
+}
+
+#logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+nav ul li a.login {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+main {
+    margin: 25px;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: left;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lenks {
+    display: block;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.lenks ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    display: block;
+}
+
+.socmed {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.socmed a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 1250px) {
+
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header {
+        max-width: 97%;
+    }
+
+    #logo a {
+        font-size: medium;
+    }
+
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: small;
+        text-align: center;
+    }
+    
+    nav ul li a.login {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    #search input {
+        display: none;
+    }
+    
+    #search button{
+        display: none;
+    }
+
+    .products {
+        gap: 100px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+  
+    footer .lenks {
+      flex-direction: column;
+    }
+  
+    footer .socmed img {
+      width: 24px;
+      height: 24px;
+    }
+  }

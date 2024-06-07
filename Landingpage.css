@@ -1,0 +1,215 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ebba28;
+}
+
+#logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+nav ul li a.login {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.unahan img {
+    align-self: center;
+    width: 94%;
+    margin: 40px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+section {
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    gap: 160px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.item img {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.item img:hover {
+    transform: scale(1.2);
+}
+
+.item button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 5px;
+    color: white;
+}
+
+.item #view {
+    background-color: black;
+    margin-top: -5px;
+}
+
+.item #view:hover {
+    background-color: gray;
+}
+
+.item #add {
+    background-color:#ebba28;
+}
+
+.item #add:hover {
+    background-color: #cf7a0a;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: grey;
+}
+
+.price {
+    font-size: 16px;
+    color: black;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: left;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lenks {
+    display: block;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.lenks ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    display: block;
+}
+
+.socmed {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.socmed a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 1250px) {
+
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header {
+        max-width: 97%;
+    }
+
+    #logo a {
+        font-size: medium;
+    }
+
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: small;
+        text-align: center;
+    }
+    
+    nav ul li a.login {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 2px;
+    }
+
+    .unahan img{
+        width: 96%;
+        margin: 10px;
+    }
+
+    .products {
+        gap: 100px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+  
+    footer .lenks {
+      flex-direction: column;
+    }
+  
+    footer .socmed img {
+      width: 24px;
+      height: 24px;
+    }
+  }
