@@ -187,10 +187,7 @@ footer {
     }
     
     nav ul li a.login {
-        background-color: black;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 2px;
+        display: none;
     }
 
     .unahan img{
